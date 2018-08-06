@@ -14,7 +14,6 @@ void AC::insert(const std::string &s, int v){
     }
     val[u] = v;
 }
-
 void AC::getFail(){
     std::queue<int> q;
     f[0] = 0;
