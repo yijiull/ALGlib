@@ -13,8 +13,8 @@ void SA::rmqInit(){
     }
 }
 int SA::rmq(int a, int b){
-    a = sa[a];
-    b = sa[b];
+    a = rank[a];
+    b = rank[b];
     if(a > b) swap(a, b);  //    
     a++;
     int k = 0;
