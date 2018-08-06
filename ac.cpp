@@ -1,6 +1,5 @@
 #include "ac.h"
 #include <queue>
-
 void AC::insert(const std::string &s, int v){
     int n = s.length(), u = 0;
     for(int i = 0; i < n; i++){
