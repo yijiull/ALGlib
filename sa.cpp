@@ -72,6 +72,7 @@ SA::SA(string s = "banana$"): s(s) {
         vector<int> v;
         dp.push_back(v); // 这里局部变量应该是复制的吧，释放也没事？
     }
+    process();
 };
 
 SA::~SA(){
@@ -90,6 +91,7 @@ void SA::setString(string _s){
         rank = new int[n];
         height = new int[n];
     }
+    process();
 }
 
 int* SA::getSa(){
