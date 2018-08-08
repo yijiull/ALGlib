@@ -70,9 +70,10 @@ SA::SA(string s = "banana$"): s(s) {
     height = new int[n];
     for(int i = 0; i < n; i++) {
         vector<int> v;
-        dp.push_back(v); // 这里局部变量应该是复制的吧，释放也没事？
+        dp.push_back(v); // 这里局部变量应该是复制的吧，释放也没事
     }
     process();
+    rmqInit();
 };
 
 SA::~SA(){
@@ -84,14 +85,20 @@ void SA::setString(string _s){
     n = s.length() + 1;
     s[n - 1] = '$'; // !
     if(sa != nullptr){
+        dp.clear();
         delete sa;
         delete rank;
         delete height;
         sa = new int[n];
         rank = new int[n];
         height = new int[n];
+        for(int i = 0; i < n; i++) {
+            vector<int> v;
+            dp.push_back(v); // 这里局部变量应该是复制的吧，释放也没事
+        }
     }
     process();
+    rmqInit();
 }
 
 int* SA::getSa(){

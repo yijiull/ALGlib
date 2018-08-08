@@ -3,10 +3,11 @@
 #include <string>
 #include <cstring>
 
+const int maxnode = 10010; //节点数
+const int sigma = 26; //字符集大小
+
 class AC{
 private:
-    const static int maxnode = 10010;
-    const static int sigma = 26;
     int ch[maxnode][sigma];
     int last[maxnode], val[maxnode], cnt[maxnode];
     int f[maxnode];
