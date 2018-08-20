@@ -6,24 +6,12 @@ private:
     std::vector<int> result; //匹配的位置
 
 public:
-    //answer:6,15,25,42
-    KMP(std::string text = "hello search nisearchhao search wosearrld search ",
-     std::string pattern = "search") :
-        text(text), pattern(pattern) {}
-
-    void setText(std::string s){
-        text = s;
-    }
-    void setPattern(std::string s){
-        pattern = s;
-    }
-    std::vector<int>& getResult(){
-        return result;
-    }
+    KMP(std::string text = "hello search ababa abanisearchhao search wosearrld search ",
+     std::string pattern = "aba");
+    void setText(std::string s);
+    void setPattern(std::string s);
+    std::vector<int>& getResult();
     std::vector<int>& kmp();
-
-    std::vector<int>& bm();
-
+    std::vector<int>& bm(); //TODO
     std::vector<int>& sunday();
-
 };
