@@ -4,7 +4,6 @@ class KMP{
 private:
     std::string text, pattern; //文本串、要查找的模式串
     std::vector<int> result; //匹配的位置
-
 public:
     KMP(std::string text = "hello search ababa abanisearchhao search wosearrld search ",
      std::string pattern = "aba");

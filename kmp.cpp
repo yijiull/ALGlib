@@ -92,13 +92,13 @@ int main(){
     KMP kmp;
     //kmp.setPattern("aa");
     //kmp.setText("aaaaaaaa");
-    cout<<kmp.sunday().size()<<endl;
-    cout<<kmp.kmp().size()<<endl;
+    //cout<<kmp.sunday().size()<<endl;
+    //cout<<kmp.kmp().size()<<endl;
     while(n--){
         cin>>p>>s;
         kmp.setText(s);
         kmp.setPattern(p);
-        auto v1 = kmp.kmp();
+        auto v1 = kmp.kmp(); //这个题用sunday会超时，可能数据针对kmp设计的
         cout<<v1.size()<<endl;
     }
 }
