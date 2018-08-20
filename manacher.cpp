@@ -64,5 +64,6 @@ int main(){
         cin>>s;
         manacher.setString(s);
         cout<<manacher.getMaxLen()<<endl;
+        //cout<<manacher.getMaxString()<<endl;
     }
 }
