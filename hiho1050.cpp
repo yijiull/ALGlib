@@ -48,6 +48,7 @@ int main(){
     while(cin>>n){
         int u, v;
         ans = 0;
+        for(int i = 1; i <= n; i++) e[i].clear();//
         for(int i = 1; i < n; i++){
             cin>>u>>v;
             e[u].push_back(v);
