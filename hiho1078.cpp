@@ -23,7 +23,6 @@ void pushdown(int rt, int m){
         tag[rt] = 0;
     }
 }
-
 void update(int ql, int qr, int v, int l, int r, int rt){
     if(ql <= l && r <= qr) {
         tag[rt] = v;
