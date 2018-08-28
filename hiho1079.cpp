@@ -5,7 +5,6 @@ const int maxn = 1e5 + 10;
 int pa[maxn], pb[maxn], vis[maxn];
 int c[maxn << 1];
 int cnt;
-
 int tag[maxn << 2];
 
 void pushdown(int rt){
