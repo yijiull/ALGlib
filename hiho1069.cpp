@@ -45,6 +45,7 @@ int rmq(int a, int b){
 
 int main(){
     while(cin>>n){
+        //加速之后超时RE
         //std::ios::sync_with_stdio(false);
         //std::cin.tie(0);
 
