@@ -50,7 +50,6 @@ void update(int op, int ql, int qr, int v, int l, int r, int rt){
     sum[rt] = sum[rt << 1] + sum[rt << 1 | 1];
 }
 
-
 int main(){
     int n, m;
     ios::sync_with_stdio(false);
