@@ -12,7 +12,6 @@ void build(int l, int r, int rt){
     build(m + 1, r, rt << 1 | 1);
     f[rt] = min(f[rt << 1], f[rt << 1 | 1]);
 }
-
 void update(int p, int v, int l, int r, int rt){
     if(l == r){
         f[rt] = v;
