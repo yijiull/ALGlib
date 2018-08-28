@@ -1,7 +1,7 @@
 # ALGlib
 
 ## 字符串
-- kmp
+- kmp；sunday
 - manacher
 - ac自动机
 ## 图论
